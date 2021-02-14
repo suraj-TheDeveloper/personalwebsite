@@ -1,0 +1,337 @@
+@font-face{
+    font-family: mon;
+    src: url("/personalwebsite/fonts/Montserrat/Montserrat-Bold.ttf")
+}
+@font-face{
+    font-family: monlight;
+    src: url("/personalwebsite/fonts/Montserrat/Montserrat-Light.ttf")
+}
+html{
+    scroll-behavior: smooth;
+}
+@media only screen and (max-width: 600px){
+    /* index, Regsiter and login */
+    .heading-2{
+        margin-top: 100px;
+    }
+    .primary{
+        margin-bottom: 300px;
+    }
+    .form-row{
+        padding: 8px;
+    }
+    .col-head{
+        margin-top: 200px;
+    }
+    .site-title-middle-mobile{
+        font-size: 30px;
+        font-family: monlight;
+    }
+    .site-title-first-mobile{
+        font-size: 45px;
+        padding-top: 200px;
+        font-family: mon;
+    }
+    #home{
+        min-height: 670px;
+        background-color: dodgerblue;
+    }
+    #about{
+        min-height: 400px;
+    }
+    #cv{
+        min-height: 300px;
+        background-color: #F7F2F1;
+    }
+    #contact{
+        min-height: 300px;
+        background-color: #2A2524;
+        margin-bottom: -10px;
+    }
+    .about{
+        padding-top: 50px;
+        font-family: 'Noto Serif', serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .about-para{
+        line-height: 150%;
+        font-size: 15px;
+        font-family: 'Roboto';
+    }
+    .copyright{
+        padding-top: 30px;
+        color: white;
+        font-family: 'Roboto';
+        padding-bottom: 20px;
+    }
+    /* Question and Answer page */
+    #top{
+        min-height: 300px;
+        background-image: url("laptop.jpeg");
+        background-size: 100% 300px;
+    }
+}   
+@media only screen and (min-width: 600px){
+    /* index, Regsiter and login */
+    .heading-2{
+        margin-top: 100px;
+    }
+    .primary{
+        margin-bottom: 300px;
+    }
+    .form-row{
+        padding: 8px;
+    }
+    .col-head{
+        margin-top: 200px;
+    }
+    .site-title-middle-mobile{
+        font-size: 30px;
+        font-family: monlight;
+    }
+    .site-title-first-mobile{
+        font-size: 45px;
+        padding-top: 200px;
+        font-family: mon;
+        font-weight: lighter;
+    }
+    #home{
+        min-height: 670px;
+        background-color: dodgerblue;
+    }
+    #about{
+        min-height: 300px;
+    }
+    #cv{
+        min-height: 300px;
+        background-color: #F7F2F1;
+    }
+    #contact{
+        min-height: 300px;
+        background-color: #2A2524;
+        margin-bottom: -10px;
+    }
+    .about{
+        padding-top: 50px;
+        font-family: 'Noto Serif', serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .about-para{
+        line-height: 150%;
+        font-size: 15px;
+        font-family: 'Roboto';
+    }
+    .copyright{
+        padding-top: 30px;
+        color: white;
+        font-family: 'Roboto';
+        padding-bottom: 20px;
+    }
+    /* Question and Answer page */
+    #top{
+        min-height: 300px;
+        background-image: url("laptop.jpeg");
+        background-size: 100% 300px;
+    }
+}
+@media only screen and (min-width: 768px){
+    /* index, Regsiter and login */
+    .heading-2{
+        margin-top: 100px;
+    }
+    .form-row{
+        padding: 8px;
+    }
+    .primary{
+        margin-bottom: 100px;
+    }
+    .col-head{
+        margin-top: 200px;
+    }
+    .site-title-middle-tablet{
+        display: block;
+        font-size: 40px;
+        font-family: monlight;
+    }
+    .site-title-first-tablet{
+        display: block;
+        font-size: 60px;
+    }
+    #home{
+        min-height: 670px;
+        background-image: url('/personalwebsite/images/background/generic.png'); 
+        background-size: 100% 100%;
+    }
+    #about{
+        min-height: 300px;
+    }
+    #cv{
+        min-height: 300px;
+        background-color: #F7F2F1;
+    }
+    #contact{
+        min-height: 300px;
+        background-color: #2A2524;
+        margin-bottom: -10px;
+    }
+    .about{
+        padding-top: 50px;
+        font-family: 'Noto Serif', serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .about-para{
+        line-height: 150%;
+        font-size: 22px;
+        font-family: 'Roboto';
+    }
+    .copyright{
+        padding-top: 30px;
+        color: white;
+        font-family: 'Roboto';
+        padding-bottom: 20px;
+    }
+    /* Question and Answer page */
+    #top{
+        min-height: 300px;
+        background-image: url("laptop.jpeg");
+        background-size: 100% 300px;
+    }
+}
+@media only screen and (min-width: 992px){
+    /* index, Regsiter and login */
+    .heading-2{
+        margin-top: 100px;
+    }
+    .form-row{
+        padding: 8px;
+    }
+    .primary{
+        display: none;;
+    }
+    .col-head{
+        margin-top: 200px;
+    }
+    .site-title-middle-laptop{
+        font-size: 40px;
+        font-family: monlight;
+    }
+    .site-title-first-laptop{
+        font-size: 60px;
+        font-family: mon;
+        font-weight: lighter;
+    }
+    #about{
+        min-height: 300px;
+    }
+    #contact{
+        min-height: 300px;
+        background-color: #2A2524;
+        margin-bottom: -10px;
+    }
+    #cv{
+        min-height: 300px;
+        background-color: #F7F2F1;
+    }
+    .about{
+        padding-top: 50px;
+        font-family: 'Noto Serif', serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .about-para{
+        line-height: 150%;
+        font-size: 22px;
+        font-family: 'Roboto';
+    }
+    .copyright{
+        padding-top: 30px;
+        color: white;
+        font-family: 'Roboto';
+        padding-bottom: 20px;
+    }
+    /* Question and Answer page */
+    #top{
+        min-height: 300px;
+        background-image: url("laptop.jpeg");
+        background-size: 100% 300px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    /* index, Regsiter and login */
+    .heading-2{
+        margin-top: 100px;
+    }
+    .form-row{
+        padding: 10px;
+    }
+    .primary{
+        display: none;
+    }
+    .col-head{
+        margin-top: 200px;
+    }
+    html{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .site-title-middle-laptop{
+        display: block;
+        font-size: 40px;
+        font-family: monlight;
+    }
+    .site-title-first-laptop{
+        display: block;
+        font-size: 60px;
+        padding-top: 250px;
+        font-family: mon;
+        font-weight: lighter;
+    }
+    .nav-link-right{
+        margin-left: 500px;
+    }
+    #home{
+        min-height: 670px;
+        background-image: url('/personalwebsite/images/background/generic.png'); 
+        background-size: 100% 100%;
+    }
+    #about{
+        min-height: 300px;
+    }
+    #cv{
+        min-height: 300px;
+        background-color: #afa3a0;
+    }
+    #contact{
+        min-height: 300px;
+        background-color: #2A2524;
+        margin-bottom: -10px;
+    }
+    .about{
+        padding-top: 50px;
+        font-family: 'Noto Serif', serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .about-para{
+        line-height: 150%;
+        font-size: 22px;
+        font-family: 'Roboto';
+    }
+    .copyright{
+        padding-top: 30px;
+        color: white;
+        font-family: 'Roboto';
+        padding-bottom: 20px;
+    }
+    /* Question and Answer page */
+    #top{
+        min-height: 300px;
+        background-image: url("laptop.jpeg");
+        background-size: 100% 300px;
+    }
+    #navigation{
+        min-height: 100px;
+    }
+}
