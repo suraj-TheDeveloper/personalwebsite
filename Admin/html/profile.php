@@ -16,6 +16,11 @@
     <script src="../js/chart-js-config.js"></script>
     <title>Profile | Suraj TheDeveloper</title>
 </head>
+<style>
+    .spur-card-title{
+        color: white;
+    }
+</style>
 <?php
     if(!isset($_SESSION['Email'])){
         header("login.php");
@@ -35,9 +40,9 @@
                 <div class="container-fluid">
                     <h1 class="dash-title">Profile</h1>
                     <div class="card spur-card">
-                        <div class="card-header">
+                        <div class="card-header bg-dark">
                             <div class="spur-card-icon">
-                                <i class="fas fa-chart-bar"></i>
+                                <i class="fas fa-user-circle" style="color: white;"></i>
                             </div>
                             <div class="spur-card-title"> Admin's Profile </div>
                             
@@ -48,6 +53,32 @@
                                 $link = mysqli_connect("localhost", "root", "", "personal");
                                 /** query to select data */
                                 $Sql = "SELECT * FROM admin WHERE Email = '".$_SESSION['Email']."'";
+                                $result = mysqli_query($link, $Sql);
+                                while($row = mysqli_fetch_assoc($result)){
+                                    ?>
+                                        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" onsubmit="return validatepassword();">
+                                            <?php
+                                                if(isset($_GET['err'])){
+                                                    ?>
+                                                    <p style="text-align: center;"><?php echo $_GET['err']; ?></p>
+                                                    <?php
+                                                }
+                                            ?> 
+                                            <div class="form-group">
+                                                <label for="Name">Name</label><input type="text" class="form-control" name="Name" value="<?php echo $row['Name']; ?>">
+                                                <small id="helpId" class="form-text text-muted"></small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Email">Email</label><input type="email" id="Password" class="form-control" name="email" value="<?php echo $row['Email']; ?>">
+                                                <small id="password" class="form-text text-muted"></small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Phone">Phone</label><input type="tel" id="Confirm" class="form-control" name="Phone" value="<?php echo $row['Phone']; ?>">
+                                                <small id="confirm" class="form-text text-muted"></small>
+                                            </div>
+                                        </form>
+                                    <?php
+                                }
                             ?>
                         </div>
                     </div>

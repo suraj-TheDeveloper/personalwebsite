@@ -10,10 +10,13 @@
             <i class="fas fa-home"></i> Dashboard 
         </a>
         <a href="profile.php" class="dash-nav-item">
-            <i class="fas fa-chart-bar"></i> Profile 
+            <i class="fas fa-user-circle"></i> Profile 
+        </a>
+        <a href="forms.php" class="dash-nav-item">
+            <i class="fas fa-user-edit"></i> Edit Profile 
         </a>
         <a href="editpage.php" class="dash-nav-item">
-            <i class="fas fa-cube"></i> Edit 
+            <i class="fas fa-cube"></i> Edit Front Page 
         </a>
         <!--<div class="dash-nav-dropdown">
             <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
