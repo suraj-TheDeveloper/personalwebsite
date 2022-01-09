@@ -36,7 +36,7 @@
     </style>
     <body>
         <?php
-            $link = mysqli_connect("localhost", "root", "", "personal");
+            $link = mysqli_connect("localhost", "root", "123456", "personal");
             /** selecting the indexpage table */
             $Sql = "SELECT * FROM indexpage";
             /**now executing the query */
@@ -70,7 +70,7 @@
         <!-- end -->
         <?php
             }
-            $links = mysqli_connect("localhost", "root", "", "personal-cv");
+            $links = mysqli_connect("localhost", "root", "123456", "personal");
             /** selecting the indexpage table */
             $Sql = "SELECT * FROM careerobjective";
             /**now executing the query */
@@ -90,7 +90,7 @@
                 <h3 class="h3" style="font-family: monlight; margin-top: 30px;">Education Qualification:</h3>
                 <?php
             }
-            $links = mysqli_connect("localhost", "root", "", "personal-cv");
+            $links = mysqli_connect("localhost", "root", "123456", "personal");
             $Sql = "SELECT * FROM qualification";
             /**now executing the query */
             $result = mysqli_query($links, $Sql);
@@ -105,7 +105,7 @@
                 ?>
                 <h3 class="h3" style="font-family: monlight; margin-top: 30px;">Certificates:</h3>
                 <?php
-                    $links = mysqli_connect("localhost", "root", "", "personal-cv");
+                    $links = mysqli_connect("localhost", "root", "123456", "personal");
                     $Sql = "SELECT * FROM certificates";
                     $result = mysqli_query($links, $Sql);
                     while($row = mysqli_fetch_array($result)){
@@ -118,7 +118,7 @@
                 ?>
                 <h3 class="h3" style="font-family: monlight; margin-top: 30px;">Languages Known:</h3>
                 <?php
-                    $links = mysqli_connect("localhost", "root", "", "personal-cv");
+                    $links = mysqli_connect("localhost", "root", "123456", "personal");
                     $Sql = "SELECT * FROM languages";
                     $result = mysqli_query($links, $Sql);
                     while($row = mysqli_fetch_array($result)){
@@ -131,8 +131,8 @@
                 ?>
                 <h3 class="h3" style="font-family: monlight; margin-top: 30px;">Frameworks Known:</h3>
                 <?php
-                    $links = mysqli_connect("localhost", "root", "", "personal-cv");
-                    $Sql = "SELECT * FROM framesworks";
+                    $links = mysqli_connect("localhost", "root", "123456", "personal");
+                    $Sql = "SELECT * FROM frameworks";
                     $result = mysqli_query($links, $Sql);
                     while($row = mysqli_fetch_array($result)){
                 ?>
@@ -144,7 +144,7 @@
                 ?>
                  <h3 class="h3" style="font-family: monlight; margin-top: 30px;">Technical Skills:</h3>
                 <?php
-                    $links = mysqli_connect("localhost", "root", "", "personal-cv");
+                    $links = mysqli_connect("localhost", "root", "123456", "personal");
                     $Sql = "SELECT * FROM skills";
                     $result = mysqli_query($links, $Sql);
                     while($row = mysqli_fetch_array($result)){
