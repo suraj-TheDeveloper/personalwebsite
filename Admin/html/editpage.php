@@ -38,7 +38,7 @@
                             <div class="card-body">
                                 <?php
                                 /** select and display query */
-                                    $link = mysqli_connect("localhost", "root", "", "personal");
+                                    $link = mysqli_connect("localhost", "root", "123456", "personal");
                                     $Sql = "SELECT * FROM indexpage";
                                     $result = mysqli_query($link, $Sql);
                                     while($row = mysqli_fetch_assoc($result)){
@@ -103,7 +103,7 @@
                                 <div class="card-body">
                                 <?php
                                     /**select and display query */
-                                    $link = mysqli_connect("localhost", "root", "", "personal-cv");
+                                    $link = mysqli_connect("localhost", "root", "123456", "personal");
                                     $Sql = "SELECT * FROM careerobjective";
                                     $result = mysqli_query($link, $Sql);
                                     while($row = mysqli_fetch_assoc($result)){
@@ -153,7 +153,7 @@
                                 <div class="card-body">
                                         <?php
                                         /** display query */
-                                            $link = mysqli_connect("localhost", "root", "", "personal-cv");
+                                            $link = mysqli_connect("localhost", "root", "123456", "personal");
                                             $Sql = "SELECT * FROM certificates";
                                             $result = mysqli_query($link, $Sql);
                                             while($row = mysqli_fetch_assoc($result)){
@@ -216,7 +216,7 @@
                                         <input type="submit" value="Insert" name="insert" class="btn btn-info" style="float: right;">                                        
                                     </form>
                                     <?php
-                                        $link = mysqli_connect("localhost", "root", "", "personal-cv");
+                                        $link = mysqli_connect("localhost", "root", "123456", "personal");
                                         if(isset($_POST['insert'])){
                                             $certificates = mysqli_real_escape_string($link, $_POST['certificates']);
 
@@ -239,7 +239,7 @@
                                 <div class="card-body"> 
                                 <?php
                                         /** display query */
-                                            $link = mysqli_connect("localhost", "root", "", "personal-cv");
+                                            $link = mysqli_connect("localhost", "root", "123456", "personal");
                                             $Sql = "SELECT * FROM skills";
                                             $result = mysqli_query($link, $Sql);
                                             while($row = mysqli_fetch_assoc($result)){
@@ -303,7 +303,7 @@
                                         <input type="submit" value="Insert" name="inserts" class="btn btn-info" style="float: right;">                                        
                                     </form>
                                     <?php
-                                        $link = mysqli_connect("localhost", "root", "", "personal-cv");
+                                        $link = mysqli_connect("localhost", "root", "123456", "personal");
                                         if(isset($_POST['inserts'])){
                                             $skills = mysqli_real_escape_string($link, $_POST['skills']);
 
@@ -326,7 +326,7 @@
                                 <div class="card-body"> 
                                 <?php
                                         /** display query */
-                                            $link = mysqli_connect("localhost", "root", "", "personal-cv");
+                                            $link = mysqli_connect("localhost", "root", "123456", "personal");
                                             $Sql = "SELECT * FROM languages";
                                             $result = mysqli_query($link, $Sql);
                                             while($row = mysqli_fetch_assoc($result)){
@@ -389,7 +389,7 @@
                                         <input type="submit" value="Insert" name="inserts" class="btn btn-info" style="float: right;">                                        
                                     </form>
                                     <?php
-                                        $link = mysqli_connect("localhost", "root", "", "personal-cv");
+                                        $link = mysqli_connect("localhost", "root", "123456", "personal");
                                         if(isset($_POST['inserts'])){
                                             $skills = mysqli_real_escape_string($link, $_POST['skills']);
 
@@ -412,7 +412,7 @@
                                 <div class="card-body">
                                 <?php
                                         /** display query */
-                                            $link = mysqli_connect("localhost", "root", "", "personal-cv");
+                                            $link = mysqli_connect("localhost", "root", "123456", "personal");
                                             $Sql = "SELECT * FROM framesworks";
                                             $result = mysqli_query($link, $Sql);
                                             while($row = mysqli_fetch_assoc($result)){
@@ -475,7 +475,7 @@
                                         <input type="submit" value="Insert" name="insertss" class="btn btn-info" style="float: right;">                                        
                                     </form>
                                     <?php
-                                        $link = mysqli_connect("localhost", "root", "", "personal-cv");
+                                        $link = mysqli_connect("localhost", "root", "123456", "personal");
                                         if(isset($_POST['insertss'])){
                                             $id = mysqli_real_escape_string($link, $_POST['id']);
                                             $frameworks = mysqli_real_escape_string($link, $_POST['frameworks']);

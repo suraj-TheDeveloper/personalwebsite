@@ -55,7 +55,7 @@
             </form>
             <script src="/personalwebsite/Admin/js/validate.js"></script>
             <?php
-                $link = mysqli_connect("localhost", "root", "", "personal");
+                $link = mysqli_connect("localhost", "root", "123456", "personal");
                 if(isset($_POST['resetpassword'])){
                     if((empty($_POST['Email'])) || (empty($_POST['Password'])) || (empty($_POST['ConfirmPassword']))){
                         header("location:resetpassword.php?nameerr=please fill this column");

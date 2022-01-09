@@ -65,7 +65,7 @@
                 </form>
                 <?php
                     if(isset($_POST['login'])){
-                        $link = mysqli_connect("localhost", "root", "", "personal");
+                        $link = mysqli_connect("localhost", "root", "123456", "personal");
                         if((empty($_POST['Name'])) || (empty($_POST['Email'])) || (empty($_POST['Password']))){
                             header("location:login.php?err=please fill the details");
                         } else {

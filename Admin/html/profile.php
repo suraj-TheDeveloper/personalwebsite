@@ -50,7 +50,7 @@
                         <div class="card-body">
                             <?php
                                 /** link to connect to database */
-                                $link = mysqli_connect("localhost", "root", "", "personal");
+                                $link = mysqli_connect("localhost", "root", "123456", "personal");
                                 /** query to select data */
                                 $Sql = "SELECT * FROM admin WHERE Email = '".$_SESSION['Email']."'";
                                 $result = mysqli_query($link, $Sql);
